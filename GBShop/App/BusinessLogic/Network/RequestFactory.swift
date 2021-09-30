@@ -14,7 +14,6 @@ class RequestFactory {
     lazy var commonSession: Session = {
         let configuration = URLSessionConfiguration.default
         configuration.httpShouldSetCookies = false
-        configuration.headers = .default
         let manager = Session(configuration: configuration)
         return manager
     }()
@@ -25,6 +24,14 @@ class RequestFactory {
     func makeAuthRequestFatory() -> AuthRequestFactory {
         let errorParser = makeErrorParser()
         return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    func makeProductsListRequestFactory() -> ProductsListRequestFactory {
+        let errorParser = makeErrorParser()
+        return GetListOfProducts(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    func makeCardProductRequestFactory() -> CardProductRequestFactory {
+        let errorParser = makeErrorParser()
+        return GetCardProduct(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
 }
 

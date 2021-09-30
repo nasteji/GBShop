@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let requestFactory = RequestFactory()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // MARK: - Authorization
         let auth = requestFactory.makeAuthRequestFatory()
         auth.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
@@ -24,6 +26,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
+        
+        // MARK: - Getting a list of products
+        let getProductList = requestFactory.makeProductsListRequestFactory()
+        getProductList.productsList(pageNumber: 1, idCategory: 1) { response in
+            switch response.result {
+            case .success(let productList):
+                print(productList)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        // MARK: - Getting a card product
+        let getCardProduct = requestFactory.makeCardProductRequestFactory()
+        getCardProduct.cardProduct(idProduct: 123) { response in
+            switch response.result {
+            case .success(let product):
+                print(product)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
         return true
     }
 
