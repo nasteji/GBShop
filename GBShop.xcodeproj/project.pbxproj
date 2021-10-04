@@ -377,6 +377,7 @@
 			mainGroup = 9C9A196E27020FF500D5F080;
 			packageReferences = (
 				9CEDA5D02705987D00C802D2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9C8AA4E1270AFC8B001B6FC5 /* XCRemoteSwiftPackageReference "heroku-buildpack" */,
 			);
 			productRefGroup = 9C9A197827020FF500D5F080 /* Products */;
 			projectDirPath = "";
@@ -806,6 +807,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9C8AA4E1270AFC8B001B6FC5 /* XCRemoteSwiftPackageReference "heroku-buildpack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor-community/heroku-buildpack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.0;
+			};
+		};
 		9CEDA5D02705987D00C802D2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
