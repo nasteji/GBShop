@@ -25,8 +25,9 @@ extension GetCardProduct: CardProductRequestFactory {
     func cardProduct(idProduct: Int, completionHandler: @escaping (AFDataResponse<CardProductResult>) -> Void) {
         let requestModel = CardProduct(baseUrl: baseUrl,
                                        idProduct: idProduct)
-        self.request(request: requestModel, completionHandler: completionHandler) }
+        self.request(request: requestModel, completionHandler: completionHandler)
     }
+}
 
 extension GetCardProduct {
     struct CardProduct: RequestRouter {

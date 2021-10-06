@@ -21,10 +21,12 @@ class RequestFactory {
     func makeErrorParser() -> AbstractErrorParser {
         return ErrorParser()
     }
+    // MARK: - Authorization
     func makeAuthRequestFatory() -> AuthRequestFactory {
         let errorParser = makeErrorParser()
         return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    // MARK: - Product
     func makeProductsListRequestFactory() -> ProductsListRequestFactory {
         let errorParser = makeErrorParser()
         return GetListOfProducts(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
@@ -32,6 +34,19 @@ class RequestFactory {
     func makeCardProductRequestFactory() -> CardProductRequestFactory {
         let errorParser = makeErrorParser()
         return GetCardProduct(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    // MARK: - Reviews
+    func makeAddReviewRequestFactory() -> AddReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return AddReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    func makeApproveReviewRequestFactory() -> ApproveReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return ApproveReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    func makeRemoveReviewRequestFactory() -> RemoveReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return RemoveReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
 }
 
