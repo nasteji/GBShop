@@ -1,14 +1,14 @@
 //
-//  Auth.swift
+//  DeleteFromBasket.swift
 //  GBShop
 //
-//  Created by Анастасия Живаева on 28.09.2021.
+//  Created by Анастасия Живаева on 10.10.2021.
 //
 
 import Foundation
 import Alamofire
 
-class Auth: AbstractRequestFactory {
+class DeleteFromBasket: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
@@ -21,24 +21,22 @@ class Auth: AbstractRequestFactory {
     }
 }
 
-extension Auth: AuthRequestFactory {
-    func login(userName: String, password: String, completionHandler: @escaping(AFDataResponse<LoginResult>) -> Void) {
-        let requestModel = Login(baseUrl: baseUrl,
-                                 login: userName,
-                                 password: password)
+extension DeleteFromBasket: DeleteFromBasketRequestFactory {
+    func deleteFromBasket(idProduct: Int, completionHandler: @escaping (AFDataResponse<DeleteFromBasketResult>) -> Void) {
+        let requestModel = Basket(baseUrl: baseUrl,
+                                  idProduct: idProduct)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
 
-extension Auth {
-    struct Login: RequestRouter {
+extension DeleteFromBasket {
+    struct Basket: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "login.json"
-        let login: String
-        let password: String
+        let path: String = "deleteFromBasket.json"
+        let idProduct: Int
         var parameters: Parameters? {
-            return ["username": login, "password": password]
+            return ["id_product": idProduct]
         }
     }
 }
