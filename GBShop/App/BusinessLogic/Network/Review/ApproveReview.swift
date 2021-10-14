@@ -1,14 +1,14 @@
 //
-//  Auth.swift
+//  ApproveReview.swift
 //  GBShop
 //
-//  Created by Анастасия Живаева on 28.09.2021.
+//  Created by Анастасия Живаева on 06.10.2021.
 //
 
 import Foundation
 import Alamofire
 
-class Auth: AbstractRequestFactory {
+class ApproveReview: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
@@ -21,24 +21,22 @@ class Auth: AbstractRequestFactory {
     }
 }
 
-extension Auth: AuthRequestFactory {
-    func login(userName: String, password: String, completionHandler: @escaping(AFDataResponse<LoginResult>) -> Void) {
-        let requestModel = Login(baseUrl: baseUrl,
-                                 login: userName,
-                                 password: password)
+extension ApproveReview: ApproveReviewRequestFactory {
+    func approveReview(idComment: Int, completionHandler: @escaping (AFDataResponse<ApproveReviewResult>) -> Void) {
+        let requestModel = Review(baseUrl: baseUrl,
+                                  idComment: idComment)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
 
-extension Auth {
-    struct Login: RequestRouter {
+extension ApproveReview {
+    struct Review: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "login.json"
-        let login: String
-        let password: String
+        let path: String = "approveReview.json"
+        let idComment: Int
         var parameters: Parameters? {
-            return ["username": login, "password": password]
+            return ["id_comment": idComment]
         }
     }
 }
