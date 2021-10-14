@@ -124,30 +124,4 @@ class ResponseCodableTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
-    // MARK: - Adding an item to the basket
-    func testAddToBasket() {
-        AF.request("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/addToBasket.json").responseCodable(errorParser: errorParser) { [weak self] (response: AFDataResponse<AddToBasketResult>) in
-                switch response.result {
-                case .success(_):
-                    break
-                case .failure:
-                    XCTFail()
-                }
-            self?.expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 10.0)
-    }
-    // MARK: - Removing an item from the basket
-    func testDeleteFromBasket() {
-        AF.request("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/deleteFromBasket.json").responseCodable(errorParser: errorParser) { [weak self] (response: AFDataResponse<DeleteFromBasketResult>) in
-                switch response.result {
-                case .success(_):
-                    break
-                case .failure:
-                    XCTFail()
-                }
-            self?.expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 10.0)
-    }
 }
