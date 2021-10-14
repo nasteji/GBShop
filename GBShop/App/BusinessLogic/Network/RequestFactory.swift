@@ -48,5 +48,13 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return RemoveReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    func makeAddToBasketRequestFactory() -> AddToBasketRequestFactory {
+        let errorParser = makeErrorParser()
+        return AddToBasket(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    func makeDeleteFromBasketRequestFactory() -> DeleteFromBasketRequestFactory {
+        let errorParser = makeErrorParser()
+        return DeleteFromBasket(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }
 
