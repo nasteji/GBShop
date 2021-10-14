@@ -26,9 +26,8 @@ extension GetListOfProducts: ProductsListRequestFactory {
         let requestModel = ProductList(baseUrl: baseUrl,
                                        pageNumber: pageNumber,
                                        idCategory: idCategory)
-        self.request(request: requestModel, completionHandler: completionHandler)
+        self.request(request: requestModel, completionHandler: completionHandler) }
     }
-}
 
 extension GetListOfProducts {
     struct ProductList: RequestRouter {
