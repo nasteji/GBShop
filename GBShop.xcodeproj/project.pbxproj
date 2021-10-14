@@ -27,12 +27,6 @@
 		9C9A199227020FF800D5F080 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A199127020FF800D5F080 /* GBShopTests.swift */; };
 		9C9A199C27020FF800D5F080 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A199B27020FF800D5F080 /* GBShopUITests.swift */; };
 		9C9A199E27020FF800D5F080 /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A199D27020FF800D5F080 /* GBShopUITestsLaunchTests.swift */; };
-		9CB12A71271308860058065B /* AddToBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A70271308860058065B /* AddToBasketResult.swift */; };
-		9CB12A73271308A00058065B /* DeleteFromBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A72271308A00058065B /* DeleteFromBasketResult.swift */; };
-		9CB12A762713094C0058065B /* AddToBasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A752713094C0058065B /* AddToBasketRequestFactory.swift */; };
-		9CB12A78271309B10058065B /* AddToBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A77271309B10058065B /* AddToBasket.swift */; };
-		9CB12A7A27130AF50058065B /* DeleteFromBasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A7927130AF50058065B /* DeleteFromBasketRequestFactory.swift */; };
-		9CB12A7C27130B090058065B /* DeleteFromBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A7B27130B090058065B /* DeleteFromBasket.swift */; };
 		9CEDA5D22705987D00C802D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9CEDA5D12705987D00C802D2 /* Alamofire */; };
 		9CEDA5D42705A4CB00C802D2 /* ProductsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEDA5D32705A4CB00C802D2 /* ProductsResult.swift */; };
 		9CEDA5D92705A67200C802D2 /* ProductsListRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEDA5D82705A67200C802D2 /* ProductsListRequestFactory.swift */; };
@@ -40,15 +34,6 @@
 		9CEDA5DF2705B32A00C802D2 /* CardProductResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEDA5DE2705B32A00C802D2 /* CardProductResult.swift */; };
 		9CEDA5E22705B38C00C802D2 /* CardProductRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEDA5E12705B38C00C802D2 /* CardProductRequestFactory.swift */; };
 		9CEDA5E42705B43500C802D2 /* GetCardProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEDA5E32705B43500C802D2 /* GetCardProduct.swift */; };
-		9CF4FDA4270DB8A200F39FFA /* AddReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDA3270DB8A200F39FFA /* AddReviewResult.swift */; };
-		9CF4FDA6270DB92D00F39FFA /* ApproveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDA5270DB92D00F39FFA /* ApproveReviewResult.swift */; };
-		9CF4FDAA270DBAC700F39FFA /* AddReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDA9270DBAC700F39FFA /* AddReviewRequestFactory.swift */; };
-		9CF4FDAC270DBAFB00F39FFA /* AddReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDAB270DBAFB00F39FFA /* AddReview.swift */; };
-		9CF4FDAE270DBE1300F39FFA /* ApproveReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDAD270DBE1300F39FFA /* ApproveReviewRequestFactory.swift */; };
-		9CF4FDB0270DBE2300F39FFA /* ApproveReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDAF270DBE2300F39FFA /* ApproveReview.swift */; };
-		9CF4FDB2270DBFDD00F39FFA /* RemoveReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDB1270DBFDD00F39FFA /* RemoveReviewRequestFactory.swift */; };
-		9CF4FDB4270DBFEA00F39FFA /* RemoveReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDB3270DBFEA00F39FFA /* RemoveReview.swift */; };
-		9CF4FDB6270DC27600F39FFA /* RemoveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDB5270DC27600F39FFA /* RemoveReviewResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,27 +78,12 @@
 		9C9A199727020FF800D5F080 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9A199B27020FF800D5F080 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		9C9A199D27020FF800D5F080 /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9CB12A70271308860058065B /* AddToBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketResult.swift; sourceTree = "<group>"; };
-		9CB12A72271308A00058065B /* DeleteFromBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromBasketResult.swift; sourceTree = "<group>"; };
-		9CB12A752713094C0058065B /* AddToBasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketRequestFactory.swift; sourceTree = "<group>"; };
-		9CB12A77271309B10058065B /* AddToBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasket.swift; sourceTree = "<group>"; };
-		9CB12A7927130AF50058065B /* DeleteFromBasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromBasketRequestFactory.swift; sourceTree = "<group>"; };
-		9CB12A7B27130B090058065B /* DeleteFromBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromBasket.swift; sourceTree = "<group>"; };
 		9CEDA5D32705A4CB00C802D2 /* ProductsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResult.swift; sourceTree = "<group>"; };
 		9CEDA5D82705A67200C802D2 /* ProductsListRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListRequestFactory.swift; sourceTree = "<group>"; };
 		9CEDA5DA2705A79C00C802D2 /* GetListOfProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListOfProducts.swift; sourceTree = "<group>"; };
 		9CEDA5DE2705B32A00C802D2 /* CardProductResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProductResult.swift; sourceTree = "<group>"; };
 		9CEDA5E12705B38C00C802D2 /* CardProductRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProductRequestFactory.swift; sourceTree = "<group>"; };
 		9CEDA5E32705B43500C802D2 /* GetCardProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCardProduct.swift; sourceTree = "<group>"; };
-		9CF4FDA3270DB8A200F39FFA /* AddReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewResult.swift; sourceTree = "<group>"; };
-		9CF4FDA5270DB92D00F39FFA /* ApproveReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveReviewResult.swift; sourceTree = "<group>"; };
-		9CF4FDA9270DBAC700F39FFA /* AddReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewRequestFactory.swift; sourceTree = "<group>"; };
-		9CF4FDAB270DBAFB00F39FFA /* AddReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReview.swift; sourceTree = "<group>"; };
-		9CF4FDAD270DBE1300F39FFA /* ApproveReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveReviewRequestFactory.swift; sourceTree = "<group>"; };
-		9CF4FDAF270DBE2300F39FFA /* ApproveReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveReview.swift; sourceTree = "<group>"; };
-		9CF4FDB1270DBFDD00F39FFA /* RemoveReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReviewRequestFactory.swift; sourceTree = "<group>"; };
-		9CF4FDB3270DBFEA00F39FFA /* RemoveReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReview.swift; sourceTree = "<group>"; };
-		9CF4FDB5270DC27600F39FFA /* RemoveReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReviewResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +131,10 @@
 				9CEDA5DC2705AA5F00C802D2 /* Auth */,
 				9CEDA5DD2705AA7700C802D2 /* ProductList */,
 				9CEDA5E02705B36600C802D2 /* CardProduct */,
+<<<<<<< HEAD
 				9CF4FDA7270DBA7E00F39FFA /* Review */,
-				9CB12A74271309090058065B /* Basket */,
+=======
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -215,17 +187,6 @@
 				9C9A199D27020FF800D5F080 /* GBShopUITestsLaunchTests.swift */,
 			);
 			path = GBShopUITests;
-			sourceTree = "<group>";
-		};
-		9CB12A74271309090058065B /* Basket */ = {
-			isa = PBXGroup;
-			children = (
-				9CB12A752713094C0058065B /* AddToBasketRequestFactory.swift */,
-				9CB12A77271309B10058065B /* AddToBasket.swift */,
-				9CB12A7927130AF50058065B /* DeleteFromBasketRequestFactory.swift */,
-				9CB12A7B27130B090058065B /* DeleteFromBasket.swift */,
-			);
-			path = Basket;
 			sourceTree = "<group>";
 		};
 		9CEDA5DC2705AA5F00C802D2 /* Auth */ = {
@@ -282,11 +243,12 @@
 				9C59BBE627037F1A00D85EC4 /* User.swift */,
 				9CEDA5D32705A4CB00C802D2 /* ProductsResult.swift */,
 				9CEDA5DE2705B32A00C802D2 /* CardProductResult.swift */,
+<<<<<<< HEAD
 				9CF4FDA3270DB8A200F39FFA /* AddReviewResult.swift */,
 				9CF4FDA5270DB92D00F39FFA /* ApproveReviewResult.swift */,
 				9CF4FDB5270DC27600F39FFA /* RemoveReviewResult.swift */,
-				9CB12A70271308860058065B /* AddToBasketResult.swift */,
-				9CB12A72271308A00058065B /* DeleteFromBasketResult.swift */,
+=======
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -330,19 +292,6 @@
 				9C9A198827020FF700D5F080 /* Info.plist */,
 			);
 			path = Environments;
-			sourceTree = "<group>";
-		};
-		9CF4FDA7270DBA7E00F39FFA /* Review */ = {
-			isa = PBXGroup;
-			children = (
-				9CF4FDA9270DBAC700F39FFA /* AddReviewRequestFactory.swift */,
-				9CF4FDAB270DBAFB00F39FFA /* AddReview.swift */,
-				9CF4FDAD270DBE1300F39FFA /* ApproveReviewRequestFactory.swift */,
-				9CF4FDAF270DBE2300F39FFA /* ApproveReview.swift */,
-				9CF4FDB1270DBFDD00F39FFA /* RemoveReviewRequestFactory.swift */,
-				9CF4FDB3270DBFEA00F39FFA /* RemoveReview.swift */,
-			);
-			path = Review;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,37 +433,38 @@
 			files = (
 				9CEDA5DF2705B32A00C802D2 /* CardProductResult.swift in Sources */,
 				9C59BBEA27037F8100D85EC4 /* AuthRequestFactory.swift in Sources */,
-				9CB12A7C27130B090058065B /* DeleteFromBasket.swift in Sources */,
+<<<<<<< HEAD
 				9CF4FDB2270DBFDD00F39FFA /* RemoveReviewRequestFactory.swift in Sources */,
 				9C59BBE327037E4C00D85EC4 /* RequestRouter.swift in Sources */,
 				9CEDA5E42705B43500C802D2 /* GetCardProduct.swift in Sources */,
-				9CB12A78271309B10058065B /* AddToBasket.swift in Sources */,
 				9CF4FDAE270DBE1300F39FFA /* ApproveReviewRequestFactory.swift in Sources */,
+=======
+				9C59BBE327037E4C00D85EC4 /* RequestRouter.swift in Sources */,
+				9CEDA5E42705B43500C802D2 /* GetCardProduct.swift in Sources */,
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
 				9C59BBDA27037A8200D85EC4 /* ErrorParser.swift in Sources */,
-				9CB12A762713094C0058065B /* AddToBasketRequestFactory.swift in Sources */,
-				9CB12A73271308A00058065B /* DeleteFromBasketResult.swift in Sources */,
 				9C59BBEE270380B500D85EC4 /* RequestFactory.swift in Sources */,
 				9CEDA5DB2705A79C00C802D2 /* GetListOfProducts.swift in Sources */,
 				9C9A197F27020FF500D5F080 /* ViewController.swift in Sources */,
-				9CF4FDB6270DC27600F39FFA /* RemoveReviewResult.swift in Sources */,
 				9C9A197B27020FF500D5F080 /* AppDelegate.swift in Sources */,
-				9CF4FDA6270DB92D00F39FFA /* ApproveReviewResult.swift in Sources */,
 				9CEDA5D42705A4CB00C802D2 /* ProductsResult.swift in Sources */,
-				9CB12A7A27130AF50058065B /* DeleteFromBasketRequestFactory.swift in Sources */,
+<<<<<<< HEAD
 				9CF4FDAC270DBAFB00F39FFA /* AddReview.swift in Sources */,
 				9CF4FDB4270DBFEA00F39FFA /* RemoveReview.swift in Sources */,
+=======
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
 				9CEDA5D92705A67200C802D2 /* ProductsListRequestFactory.swift in Sources */,
 				9CEDA5E22705B38C00C802D2 /* CardProductRequestFactory.swift in Sources */,
 				9C59BBDC27037B1700D85EC4 /* DataRequest.swift in Sources */,
-				9CF4FDAA270DBAC700F39FFA /* AddReviewRequestFactory.swift in Sources */,
 				9C59BBE127037DCD00D85EC4 /* CustomDecodableSerializer.swift in Sources */,
-				9CB12A71271308860058065B /* AddToBasketResult.swift in Sources */,
+<<<<<<< HEAD
 				9CF4FDA4270DB8A200F39FFA /* AddReviewResult.swift in Sources */,
+=======
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
 				9C59BBE527037EED00D85EC4 /* LoginResult.swift in Sources */,
 				9C9A197D27020FF500D5F080 /* SceneDelegate.swift in Sources */,
 				9C59BBE727037F1A00D85EC4 /* User.swift in Sources */,
 				9C59BBD82703794500D85EC4 /* AbstractErrorParser.swift in Sources */,
-				9CF4FDB0270DBE2300F39FFA /* ApproveReview.swift in Sources */,
 				9C59BBEC27037FC800D85EC4 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,7 +643,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
@@ -722,7 +671,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
