@@ -26,8 +26,7 @@ extension Auth: AuthRequestFactory {
         let requestModel = Login(baseUrl: baseUrl,
                                  login: userName,
                                  password: password)
-        self.request(request: requestModel, completionHandler: completionHandler)
-    }
+        self.request(request: requestModel, completionHandler: completionHandler) }
 }
 
 extension Auth {

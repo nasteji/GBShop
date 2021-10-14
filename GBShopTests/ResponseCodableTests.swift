@@ -43,7 +43,6 @@ class ResponseCodableTests: XCTestCase {
         errorParser = nil
     }
     
-    // MARK: - Download And Parse
     func testShouldDownloadAndParse() {
         AF.request("https://jsonplaceholder.typicode.com/posts/1").responseCodable(errorParser: errorParser) { [weak self] (response: AFDataResponse<PostStub>) in
                 switch response.result {
@@ -57,7 +56,6 @@ class ResponseCodableTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
     
-    // MARK: - Getting a list of products
     func testGettingListOfProducts() {
         AF.request("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json").responseCodable(errorParser: errorParser) { [weak self] (response: AFDataResponse<ProductsResult>) in
                 switch response.result {
@@ -71,7 +69,6 @@ class ResponseCodableTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
     
-    // MARK: - Getting a card product
     func testGettingCardProduct() {
         AF.request("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/getGoodById.json").responseCodable(errorParser: errorParser) { [weak self] (response: AFDataResponse<CardProductResult>) in
                 switch response.result {
@@ -84,6 +81,7 @@ class ResponseCodableTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
+<<<<<<< HEAD
     
     // MARK: - Adding a review
     func testAddReview() {
@@ -124,4 +122,6 @@ class ResponseCodableTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
+=======
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
 }

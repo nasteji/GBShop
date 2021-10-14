@@ -21,12 +21,10 @@ class RequestFactory {
     func makeErrorParser() -> AbstractErrorParser {
         return ErrorParser()
     }
-    // MARK: - Authorization
     func makeAuthRequestFatory() -> AuthRequestFactory {
         let errorParser = makeErrorParser()
         return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
-    // MARK: - Product
     func makeProductsListRequestFactory() -> ProductsListRequestFactory {
         let errorParser = makeErrorParser()
         return GetListOfProducts(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
@@ -35,6 +33,7 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return GetCardProduct(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+<<<<<<< HEAD
     // MARK: - Reviews
     func makeAddReviewRequestFactory() -> AddReviewRequestFactory {
         let errorParser = makeErrorParser()
@@ -48,5 +47,7 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return RemoveReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+=======
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
 }
 
