@@ -11,26 +11,22 @@ class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var creditCardTextField: UITextField!
-    @IBOutlet weak var bioTextField: UITextField!
-    @IBOutlet weak var sexSegmentedControl: UISegmentedControl!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
+    
+    let requestFactory = RequestFactory()
     
     @IBAction func registeredActionButton(_ sender: UIButton) {
         if loginTextField.text != "",
            passwordTextField.text != "",
-           emailTextField.text != "",
-           creditCardTextField.text != "",
            lastNameTextField.text != "",
            nameTextField.text != "" {
-            let newUser = User(id: ((UserStorage.shared.users.last?.id ?? 0) + 1), login: loginTextField.text!, name: nameTextField.text!, lastname: lastNameTextField.text!)
+            let newUser = User(id: 1, login: loginTextField.text!, password: passwordTextField.text!, name: nameTextField.text!, lastname: lastNameTextField.text!)
             UserStorage.shared.addUser(user: newUser)
             
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let userViewController = storyBoard.instantiateViewController(withIdentifier: "UserViewController")
-            navigationController?.pushViewController(userViewController, animated: true)
+            let tabBarViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarViewController")
+            navigationController?.pushViewController(tabBarViewController, animated: true)
         }
     }
     
@@ -38,5 +34,4 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
     }
     
-
 }

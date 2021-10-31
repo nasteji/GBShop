@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C19884B272E9CCE00004B6B /* CatalogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19884A272E9CCE00004B6B /* CatalogController.swift */; };
 		9C1FF8F92704C8ED0007FCF6 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */; };
 		9C3148B02722D09500C07375 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3148AF2722D09500C07375 /* UserStorage.swift */; };
 		9C59BBD82703794500D85EC4 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBD72703794500D85EC4 /* AbstractErrorParser.swift */; };
@@ -15,7 +16,7 @@
 		9C59BBE127037DCD00D85EC4 /* CustomDecodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBE027037DCD00D85EC4 /* CustomDecodableSerializer.swift */; };
 		9C59BBE327037E4C00D85EC4 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBE227037E4C00D85EC4 /* RequestRouter.swift */; };
 		9C59BBE527037EED00D85EC4 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBE427037EED00D85EC4 /* LoginResult.swift */; };
-		9C59BBE727037F1A00D85EC4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBE627037F1A00D85EC4 /* User.swift */; };
+		9C59BBE727037F1A00D85EC4 /* UserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBE627037F1A00D85EC4 /* UserResult.swift */; };
 		9C59BBEA27037F8100D85EC4 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBE927037F8100D85EC4 /* AuthRequestFactory.swift */; };
 		9C59BBEC27037FC800D85EC4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBEB27037FC800D85EC4 /* Auth.swift */; };
 		9C59BBEE270380B500D85EC4 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBED270380B500D85EC4 /* RequestFactory.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C19884A272E9CCE00004B6B /* CatalogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogController.swift; sourceTree = "<group>"; };
 		9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		9C3148AF2722D09500C07375 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		9C59BBD72703794500D85EC4 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
@@ -82,7 +84,7 @@
 		9C59BBE027037DCD00D85EC4 /* CustomDecodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecodableSerializer.swift; sourceTree = "<group>"; };
 		9C59BBE227037E4C00D85EC4 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		9C59BBE427037EED00D85EC4 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
-		9C59BBE627037F1A00D85EC4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9C59BBE627037F1A00D85EC4 /* UserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResult.swift; sourceTree = "<group>"; };
 		9C59BBE927037F8100D85EC4 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		9C59BBEB27037FC800D85EC4 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		9C59BBED270380B500D85EC4 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
@@ -197,7 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				9C59BBE427037EED00D85EC4 /* LoginResult.swift */,
-				9C59BBE627037F1A00D85EC4 /* User.swift */,
+				9C59BBE627037F1A00D85EC4 /* UserResult.swift */,
 				9CEDA5D32705A4CB00C802D2 /* ProductsResult.swift */,
 				9CEDA5DE2705B32A00C802D2 /* CardProductResult.swift */,
 				9CF4FDA3270DB8A200F39FFA /* AddReviewResult.swift */,
@@ -342,6 +344,7 @@
 				9C9A197E27020FF500D5F080 /* AuthViewController.swift */,
 				9C91A671271EE09B004109ED /* RegistrationViewController.swift */,
 				9C91A675271EE7E1004109ED /* UserViewController.swift */,
+				9C19884A272E9CCE00004B6B /* CatalogController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				9C59BBEE270380B500D85EC4 /* RequestFactory.swift in Sources */,
 				9CEDA5DB2705A79C00C802D2 /* GetListOfProducts.swift in Sources */,
 				9C9A197F27020FF500D5F080 /* AuthViewController.swift in Sources */,
+				9C19884B272E9CCE00004B6B /* CatalogController.swift in Sources */,
 				9CF4FDB6270DC27600F39FFA /* RemoveReviewResult.swift in Sources */,
 				9C9A197B27020FF500D5F080 /* AppDelegate.swift in Sources */,
 				9CF4FDA6270DB92D00F39FFA /* ApproveReviewResult.swift in Sources */,
@@ -556,7 +560,7 @@
 				9CF4FDA4270DB8A200F39FFA /* AddReviewResult.swift in Sources */,
 				9C59BBE527037EED00D85EC4 /* LoginResult.swift in Sources */,
 				9C9A197D27020FF500D5F080 /* SceneDelegate.swift in Sources */,
-				9C59BBE727037F1A00D85EC4 /* User.swift in Sources */,
+				9C59BBE727037F1A00D85EC4 /* UserResult.swift in Sources */,
 				9C59BBD82703794500D85EC4 /* AbstractErrorParser.swift in Sources */,
 				9CF4FDB0270DBE2300F39FFA /* ApproveReview.swift in Sources */,
 				9C59BBEC27037FC800D85EC4 /* Auth.swift in Sources */,

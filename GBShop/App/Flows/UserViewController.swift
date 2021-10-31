@@ -9,16 +9,15 @@ import UIKit
 
 class UserViewController: UITableViewController {
     
-    var user = User(id: 0, login: "", name: "", lastname: "")
-    let users = UserStorage.shared.users
+    var user = User(id: 0, login: "", password: "", name: "", lastname: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: UserCell.reuseID)
         
-        if !users.isEmpty {
-            user = users.last!
+        if !UserStorage.shared.users.isEmpty {
+            user = UserStorage.shared.users.last!
             self.tableView.reloadData()
         }
     }

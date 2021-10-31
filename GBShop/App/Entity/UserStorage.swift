@@ -16,3 +16,19 @@ final class UserStorage {
         users.append(user)
     }
 }
+
+final class User {
+    let id: Int
+    let login: String
+    let password: String
+    let name: String
+    let lastname: String
+    
+    init(id: Int, login: String, password: String, name: String, lastname: String) {
+        self.id = id
+        self.login = login
+        self.password = password
+        self.name = name
+        self.lastname = lastname
+    }
+}

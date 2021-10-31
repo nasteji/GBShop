@@ -48,7 +48,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Регистрация"/>
                                         <connections>
-                                            <segue destination="ufa-Qw-nUk" kind="show" id="fsz-Rp-W6u"/>
+                                            <segue destination="ufa-Qw-nUk" kind="show" id="eQo-RX-29b"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -71,7 +71,41 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="28.794642857142854"/>
         </scene>
-        <!--User View Controller-->
+        <!--Каталог-->
+        <scene sceneID="vbi-pc-rb7">
+            <objects>
+                <viewController id="T6c-cz-dSP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FqV-EG-jDx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qz3-2Z-qZm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Каталог" image="mail.and.text.magnifyingglass.rtl" catalog="system" id="2ED-dK-JWO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRs-tk-4ZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="1429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8PF-VS-Vzf">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" id="F0j-aU-fa9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hW1-gs-FiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5Um-CM-wEw" kind="relationship" relationship="viewControllers" id="Brs-Vk-LEQ"/>
+                        <segue destination="T6c-cz-dSP" kind="relationship" relationship="viewControllers" id="s0v-FP-XEx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCq-XN-LKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="891"/>
+        </scene>
+        <!--Профиль-->
         <scene sceneID="7FW-tH-bxS">
             <objects>
                 <tableViewController storyboardIdentifier="UserViewController" id="5Um-CM-wEw" customClass="UserViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,11 +128,12 @@
                             <outlet property="delegate" destination="5Um-CM-wEw" id="lwy-jo-G63"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person.fill" catalog="system" id="rzc-F4-IAu"/>
                     <navigationItem key="navigationItem" id="jSM-fV-851"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAQ-SA-76Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="767"/>
+            <point key="canvasLocation" x="661" y="728"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="UdK-ut-LO5">
@@ -109,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-9t-DQI">
-                                <rect key="frame" x="125" y="220.5" width="164" height="455.5"/>
+                                <rect key="frame" x="125" y="334.5" width="164" height="227"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbg-al-KmT">
                                         <rect key="frame" x="0.0" y="0.0" width="164" height="34"/>
@@ -131,36 +166,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tFT-sP-D7W">
-                                        <rect key="frame" x="0.0" y="196" width="164" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пол" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDe-Ws-zE9">
-                                        <rect key="frame" x="0.0" y="245" width="164" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GeF-YP-1Sy">
-                                        <rect key="frame" x="0.0" y="280.5" width="164" height="32"/>
-                                        <segments>
-                                            <segment title="М"/>
-                                            <segment title="Ж"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="credit card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hyj-iZ-LTl">
-                                        <rect key="frame" x="0.0" y="326.5" width="164" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="bio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hC0-WV-i3N">
-                                        <rect key="frame" x="0.0" y="375.5" width="164" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRr-2Y-Cbg">
-                                        <rect key="frame" x="0.0" y="424.5" width="164" height="31"/>
+                                        <rect key="frame" x="0.0" y="196" width="164" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Зарегистрироваться"/>
                                         <connections>
@@ -179,14 +186,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="RXz-Rd-cQa"/>
                     <connections>
-                        <outlet property="bioTextField" destination="NQw-y2-Cs4" id="8rK-05-Itu"/>
-                        <outlet property="creditCardTextField" destination="Hyj-iZ-LTl" id="GtA-3c-NHt"/>
-                        <outlet property="emailTextField" destination="tFT-sP-D7W" id="vbD-85-kVi"/>
                         <outlet property="lastNameTextField" destination="zZF-Wu-1cd" id="S7z-Nf-NxU"/>
                         <outlet property="loginTextField" destination="zbg-al-KmT" id="Y2I-03-YdE"/>
                         <outlet property="nameTextField" destination="NQw-y2-Cs4" id="8yd-G5-wFH"/>
                         <outlet property="passwordTextField" destination="deW-su-ZmF" id="9sy-Ug-J3R"/>
-                        <outlet property="sexSegmentedControl" destination="GeF-YP-1Sy" id="pay-QX-hXQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnY-bn-EAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -213,6 +216,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mail.and.text.magnifyingglass.rtl" catalog="system" width="128" height="89"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

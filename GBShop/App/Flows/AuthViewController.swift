@@ -15,27 +15,34 @@ class AuthViewController: UIViewController {
     let requestFactory = RequestFactory()
     
     @IBAction func logInButton(_ sender: UIButton) {
-        guard loginTextField.text == "1", passwordTextField.text == "1" else { return }
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let userViewController = storyBoard.instantiateViewController(withIdentifier: "UserViewController")
-        navigationController?.pushViewController(userViewController, animated: true)
+        auth()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        auth()
     }
     
     func auth() {
         let auth = requestFactory.makeAuthRequestFatory()
-        auth.login(userName: "Somebody", password: "mypassword") { response in
+        guard let login = loginTextField.text, let password = passwordTextField.text
+        else { return }
+        auth.login(userName: login, password: password) { response in
             switch response.result {
-            case .success(let login):
-                UserStorage.shared.addUser(user: login.user)
+            case .success(let user):
+                UserStorage.shared.addUser(user: User(id: user.user.id, login: user.user.login, password: password, name: user.user.name, lastname: user.user.lastname))
+                DispatchQueue.main.async {
+                    self.pushToTabBarViewController()
+                }
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    func pushToTabBarViewController() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBarViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarViewController")
+        navigationController?.pushViewController(tabBarViewController, animated: true)
     }
 
 }
