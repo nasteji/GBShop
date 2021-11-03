@@ -28,15 +28,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
 //
         // MARK: - Getting a list of products
-        let getProductList = requestFactory.makeProductsListRequestFactory()
-        getProductList.productsList(pageNumber: 1, idCategory: 1) { response in
-            switch response.result {
-            case .success(let productList):
-                print(productList)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+//        let getProductList = requestFactory.makeProductsListRequestFactory()
+//        getProductList.productsList(pageNumber: 1, idCategory: 1) { response in
+//            switch response.result {
+//            case .success(let productList):
+//                print(productList)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
         
         // MARK: - Getting a card product
         let getCardProduct = requestFactory.makeCardProductRequestFactory()

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C19884B272E9CCE00004B6B /* CatalogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19884A272E9CCE00004B6B /* CatalogController.swift */; };
 		9C1FF8F92704C8ED0007FCF6 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */; };
 		9C3148B02722D09500C07375 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3148AF2722D09500C07375 /* UserStorage.swift */; };
+		9C57F9B927329B7900D7E319 /* CatalogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57F9B827329B7900D7E319 /* CatalogCollectionViewController.swift */; };
+		9C57F9BC27329BEA00D7E319 /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57F9BA27329BEA00D7E319 /* CatalogCell.swift */; };
+		9C57F9BD27329BEA00D7E319 /* CatalogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C57F9BB27329BEA00D7E319 /* CatalogCell.xib */; };
 		9C59BBD82703794500D85EC4 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBD72703794500D85EC4 /* AbstractErrorParser.swift */; };
 		9C59BBDA27037A8200D85EC4 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBD927037A8200D85EC4 /* ErrorParser.swift */; };
 		9C59BBDC27037B1700D85EC4 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBDB27037B1700D85EC4 /* DataRequest.swift */; };
@@ -75,9 +77,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C19884A272E9CCE00004B6B /* CatalogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogController.swift; sourceTree = "<group>"; };
 		9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		9C3148AF2722D09500C07375 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		9C57F9B827329B7900D7E319 /* CatalogCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewController.swift; sourceTree = "<group>"; };
+		9C57F9BA27329BEA00D7E319 /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
+		9C57F9BB27329BEA00D7E319 /* CatalogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogCell.xib; sourceTree = "<group>"; };
 		9C59BBD72703794500D85EC4 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
 		9C59BBD927037A8200D85EC4 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 		9C59BBDB27037B1700D85EC4 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 			children = (
 				9C91A679271EF047004109ED /* UserCell.swift */,
 				9C91A67A271EF047004109ED /* UserCell.xib */,
+				9C57F9BA27329BEA00D7E319 /* CatalogCell.swift */,
+				9C57F9BB27329BEA00D7E319 /* CatalogCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -344,7 +350,7 @@
 				9C9A197E27020FF500D5F080 /* AuthViewController.swift */,
 				9C91A671271EE09B004109ED /* RegistrationViewController.swift */,
 				9C91A675271EE7E1004109ED /* UserViewController.swift */,
-				9C19884A272E9CCE00004B6B /* CatalogController.swift */,
+				9C57F9B827329B7900D7E319 /* CatalogCollectionViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -497,6 +503,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C57F9BD27329BEA00D7E319 /* CatalogCell.xib in Resources */,
 				9C91A67C271EF047004109ED /* UserCell.xib in Resources */,
 				9C91A674271EE461004109ED /* Main.storyboard in Resources */,
 				9C9A198727020FF700D5F080 /* LaunchScreen.storyboard in Resources */,
@@ -543,7 +550,6 @@
 				9C59BBEE270380B500D85EC4 /* RequestFactory.swift in Sources */,
 				9CEDA5DB2705A79C00C802D2 /* GetListOfProducts.swift in Sources */,
 				9C9A197F27020FF500D5F080 /* AuthViewController.swift in Sources */,
-				9C19884B272E9CCE00004B6B /* CatalogController.swift in Sources */,
 				9CF4FDB6270DC27600F39FFA /* RemoveReviewResult.swift in Sources */,
 				9C9A197B27020FF500D5F080 /* AppDelegate.swift in Sources */,
 				9CF4FDA6270DB92D00F39FFA /* ApproveReviewResult.swift in Sources */,
@@ -557,6 +563,8 @@
 				9CF4FDAA270DBAC700F39FFA /* AddReviewRequestFactory.swift in Sources */,
 				9C59BBE127037DCD00D85EC4 /* CustomDecodableSerializer.swift in Sources */,
 				9CB12A71271308860058065B /* AddToBasketResult.swift in Sources */,
+				9C57F9BC27329BEA00D7E319 /* CatalogCell.swift in Sources */,
+				9C57F9B927329B7900D7E319 /* CatalogCollectionViewController.swift in Sources */,
 				9CF4FDA4270DB8A200F39FFA /* AddReviewResult.swift in Sources */,
 				9C59BBE527037EED00D85EC4 /* LoginResult.swift in Sources */,
 				9C9A197D27020FF500D5F080 /* SceneDelegate.swift in Sources */,
