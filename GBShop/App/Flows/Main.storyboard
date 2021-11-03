@@ -94,6 +94,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <segue destination="kHa-Ti-Nuo" kind="show" identifier="SegueToProductViewController" id="P22-Zl-CKq"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -106,6 +109,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hj6-kG-QNS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2825" y="558"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="KJ5-8I-BHU">
+            <objects>
+                <viewController id="kHa-Ti-Nuo" customClass="ProductViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rtM-Og-zsx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-m4-4gS">
+                                <rect key="frame" x="87" y="250" width="240" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Ch-2f-Dwv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjL-XH-YI7">
+                                <rect key="frame" x="142" y="330" width="130" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="OMi-fe-er9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbM-0L-YZK">
+                                <rect key="frame" x="87" y="394" width="240" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Xl1-VT-fA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Cl-85-b2O">
+                                <rect key="frame" x="87" y="60" width="240" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Ts7-fO-uxE"/>
+                                    <constraint firstAttribute="width" constant="240" id="oPK-Ny-TiZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7P4-xz-OgK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vbM-0L-YZK" firstAttribute="width" secondItem="9Cl-85-b2O" secondAttribute="width" id="Cf9-fM-8ur"/>
+                            <constraint firstItem="vbM-0L-YZK" firstAttribute="top" secondItem="TjL-XH-YI7" secondAttribute="bottom" constant="43.5" id="MyK-Od-smq"/>
+                            <constraint firstItem="vbM-0L-YZK" firstAttribute="centerX" secondItem="9Cl-85-b2O" secondAttribute="centerX" id="RfK-UL-fFQ"/>
+                            <constraint firstItem="9Cl-85-b2O" firstAttribute="top" secondItem="7P4-xz-OgK" secondAttribute="top" constant="60" id="RkQ-5j-UaE"/>
+                            <constraint firstItem="3sh-m4-4gS" firstAttribute="top" secondItem="9Cl-85-b2O" secondAttribute="bottom" constant="20" id="ZBy-xt-TPq"/>
+                            <constraint firstItem="9Cl-85-b2O" firstAttribute="centerX" secondItem="rtM-Og-zsx" secondAttribute="centerX" id="eFT-hG-cDe"/>
+                            <constraint firstItem="TjL-XH-YI7" firstAttribute="top" secondItem="3sh-m4-4gS" secondAttribute="bottom" constant="30" id="hxH-Yb-WaO"/>
+                            <constraint firstItem="3sh-m4-4gS" firstAttribute="width" secondItem="9Cl-85-b2O" secondAttribute="width" id="ica-Vu-pHV"/>
+                            <constraint firstItem="3sh-m4-4gS" firstAttribute="centerX" secondItem="9Cl-85-b2O" secondAttribute="centerX" id="v8m-fO-052"/>
+                            <constraint firstItem="TjL-XH-YI7" firstAttribute="centerX" secondItem="9Cl-85-b2O" secondAttribute="centerX" id="wh3-V2-jKH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ppn-9M-ssY"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="vbM-0L-YZK" id="IqT-Ec-rrt"/>
+                        <outlet property="imageProductView" destination="9Cl-85-b2O" id="UvZ-wR-l4E"/>
+                        <outlet property="nameLabel" destination="3sh-m4-4gS" id="pIy-Nv-jzE"/>
+                        <outlet property="priceLabel" destination="TjL-XH-YI7" id="kTT-Pp-ATW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biN-gi-1ph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3582.608695652174" y="557.8125"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8PF-VS-Vzf">
