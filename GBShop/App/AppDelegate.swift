@@ -50,6 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         // MARK: - Adding a review
         let requestAddReview = requestFactory.makeAddReviewRequestFactory()
         requestAddReview.addReview(idUser: 123, text: "Текст отзыва") { response in
@@ -85,6 +86,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 =======
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
         return true
     }
 

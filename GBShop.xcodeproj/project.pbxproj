@@ -132,9 +132,12 @@
 				9CEDA5DD2705AA7700C802D2 /* ProductList */,
 				9CEDA5E02705B36600C802D2 /* CardProduct */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				9CF4FDA7270DBA7E00F39FFA /* Review */,
 =======
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -244,11 +247,14 @@
 				9CEDA5D32705A4CB00C802D2 /* ProductsResult.swift */,
 				9CEDA5DE2705B32A00C802D2 /* CardProductResult.swift */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				9CF4FDA3270DB8A200F39FFA /* AddReviewResult.swift */,
 				9CF4FDA5270DB92D00F39FFA /* ApproveReviewResult.swift */,
 				9CF4FDB5270DC27600F39FFA /* RemoveReviewResult.swift */,
 =======
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				9CEDA5DF2705B32A00C802D2 /* CardProductResult.swift in Sources */,
 				9C59BBEA27037F8100D85EC4 /* AuthRequestFactory.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				9CF4FDB2270DBFDD00F39FFA /* RemoveReviewRequestFactory.swift in Sources */,
 				9C59BBE327037E4C00D85EC4 /* RequestRouter.swift in Sources */,
 				9CEDA5E42705B43500C802D2 /* GetCardProduct.swift in Sources */,
@@ -442,6 +449,10 @@
 				9C59BBE327037E4C00D85EC4 /* RequestRouter.swift in Sources */,
 				9CEDA5E42705B43500C802D2 /* GetCardProduct.swift in Sources */,
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+				9C59BBE327037E4C00D85EC4 /* RequestRouter.swift in Sources */,
+				9CEDA5E42705B43500C802D2 /* GetCardProduct.swift in Sources */,
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
 				9C59BBDA27037A8200D85EC4 /* ErrorParser.swift in Sources */,
 				9C59BBEE270380B500D85EC4 /* RequestFactory.swift in Sources */,
 				9CEDA5DB2705A79C00C802D2 /* GetListOfProducts.swift in Sources */,
@@ -449,18 +460,24 @@
 				9C9A197B27020FF500D5F080 /* AppDelegate.swift in Sources */,
 				9CEDA5D42705A4CB00C802D2 /* ProductsResult.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				9CF4FDAC270DBAFB00F39FFA /* AddReview.swift in Sources */,
 				9CF4FDB4270DBFEA00F39FFA /* RemoveReview.swift in Sources */,
 =======
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
 				9CEDA5D92705A67200C802D2 /* ProductsListRequestFactory.swift in Sources */,
 				9CEDA5E22705B38C00C802D2 /* CardProductRequestFactory.swift in Sources */,
 				9C59BBDC27037B1700D85EC4 /* DataRequest.swift in Sources */,
 				9C59BBE127037DCD00D85EC4 /* CustomDecodableSerializer.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				9CF4FDA4270DB8A200F39FFA /* AddReviewResult.swift in Sources */,
 =======
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
 				9C59BBE527037EED00D85EC4 /* LoginResult.swift in Sources */,
 				9C9A197D27020FF500D5F080 /* SceneDelegate.swift in Sources */,
 				9C59BBE727037F1A00D85EC4 /* User.swift in Sources */,

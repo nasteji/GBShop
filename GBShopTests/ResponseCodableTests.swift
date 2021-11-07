@@ -82,6 +82,7 @@ class ResponseCodableTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     // MARK: - Adding a review
     func testAddReview() {
@@ -124,4 +125,6 @@ class ResponseCodableTests: XCTestCase {
     }
 =======
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
 }

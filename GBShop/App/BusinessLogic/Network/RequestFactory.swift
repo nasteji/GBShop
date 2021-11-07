@@ -34,6 +34,7 @@ class RequestFactory {
         return GetCardProduct(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     // MARK: - Reviews
     func makeAddReviewRequestFactory() -> AddReviewRequestFactory {
         let errorParser = makeErrorParser()
@@ -49,5 +50,7 @@ class RequestFactory {
     }
 =======
 >>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
 }
 
