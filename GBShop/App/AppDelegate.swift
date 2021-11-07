@@ -49,6 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
+<<<<<<< HEAD
+<<<<<<< HEAD
         // MARK: - Adding a review
         let requestAddReview = requestFactory.makeAddReviewRequestFactory()
         requestAddReview.addReview(idUser: 123, text: "Текст отзыва") { response in
@@ -82,28 +84,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        // MARK: - Adding an item to the basket
-        let requestAddToBasket = requestFactory.makeAddToBasketRequestFactory()
-        requestAddToBasket.addtoBasket(idProduct: 123, quantity: 1) { response in
-            switch response.result {
-            case .success(let result):
-                print(result)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
-        // MARK: - Removing an item from the basket
-        let requestDeleteFromBasket = requestFactory.makeDeleteFromBasketRequestFactory()
-        requestDeleteFromBasket.deleteFromBasket(idProduct: 123) { response in
-            switch response.result {
-            case .success(let result):
-                print(result)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
+=======
+>>>>>>> parent of 9a6a871... Merge branch 'develop' into feauture/hw4
+=======
+>>>>>>> parent of 9a6a871 (Merge branch 'develop' into feauture/hw4)
         return true
     }
 
