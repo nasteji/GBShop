@@ -46,16 +46,5 @@ class CatalogCollectionViewController: UICollectionViewController {
         }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "SegueToProductViewController", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let controller = segue.destination as? ProductViewController,
-           let indexPath = collectionView.indexPathsForSelectedItems?.first {
-            controller.idProduct = products[indexPath.row].id
-        }
-    }
-    
    
 }
