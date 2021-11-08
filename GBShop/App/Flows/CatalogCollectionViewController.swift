@@ -40,7 +40,6 @@ class CatalogCollectionViewController: UICollectionViewController {
                     self.collectionView.reloadData()
                 }
             case .failure(let error):
-                print("bbbbbb")
                 print(error.localizedDescription)
             }
         }

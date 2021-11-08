@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,11 +44,26 @@
                             <constraint firstAttribute="height" constant="130" id="OGq-rT-8qR"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVM-7C-FGI">
+                        <rect key="frame" x="160" y="100" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="IRe-tT-gu2"/>
+                            <constraint firstAttribute="width" constant="40" id="iBf-iF-hmX"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled">
+                            <imageReference key="image" image="trash" catalog="system" symbolScale="medium"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="addToBasketButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wAx-Lh-YpS"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="rbq-jr-otZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4vX-ex-w9w"/>
+                <constraint firstAttribute="trailing" secondItem="GVM-7C-FGI" secondAttribute="trailing" id="5U1-zl-y7F"/>
                 <constraint firstAttribute="trailing" secondItem="rbq-jr-otZ" secondAttribute="trailing" id="AJi-xh-5Ke"/>
                 <constraint firstItem="oFZ-7I-t2v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Lqt-Np-Rl5"/>
                 <constraint firstItem="rbq-jr-otZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NL3-LB-NGm"/>
@@ -58,6 +74,7 @@
                 <constraint firstItem="jiJ-K3-ruT" firstAttribute="height" secondItem="oFZ-7I-t2v" secondAttribute="height" id="ghs-Hc-7EC"/>
                 <constraint firstItem="Ma5-WI-ge0" firstAttribute="top" secondItem="jiJ-K3-ruT" secondAttribute="bottom" constant="10" id="i3A-tz-kRt"/>
                 <constraint firstItem="oFZ-7I-t2v" firstAttribute="top" secondItem="rbq-jr-otZ" secondAttribute="bottom" constant="5" id="mbh-u4-VtS"/>
+                <constraint firstItem="GVM-7C-FGI" firstAttribute="bottom" secondItem="rbq-jr-otZ" secondAttribute="bottom" id="tF1-AA-6p6"/>
                 <constraint firstItem="jiJ-K3-ruT" firstAttribute="top" secondItem="oFZ-7I-t2v" secondAttribute="top" id="yM7-a9-uYh"/>
             </constraints>
             <size key="customSize" width="448" height="359"/>
@@ -70,4 +87,7 @@
             <point key="canvasLocation" x="418.84057971014494" y="186.83035714285714"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
 </document>

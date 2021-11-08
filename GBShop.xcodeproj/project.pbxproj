@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9C1FF8F92704C8ED0007FCF6 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */; };
 		9C3148B02722D09500C07375 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3148AF2722D09500C07375 /* UserStorage.swift */; };
+		9C503A5A27392C4F00775FB0 /* BasketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503A5927392C4F00775FB0 /* BasketTableViewController.swift */; };
+		9C503A5D2739313D00775FB0 /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503A5B2739313D00775FB0 /* BasketCell.swift */; };
+		9C503A5E2739313D00775FB0 /* BasketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C503A5C2739313D00775FB0 /* BasketCell.xib */; };
+		9C503A60273932FE00775FB0 /* GetBasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503A5F273932FE00775FB0 /* GetBasketRequestFactory.swift */; };
+		9C503A622739331100775FB0 /* GetBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503A612739331100775FB0 /* GetBasket.swift */; };
+		9C503A642739336E00775FB0 /* GetBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503A632739336E00775FB0 /* GetBasketResult.swift */; };
 		9C57F9B927329B7900D7E319 /* CatalogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57F9B827329B7900D7E319 /* CatalogCollectionViewController.swift */; };
 		9C57F9BC27329BEA00D7E319 /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57F9BA27329BEA00D7E319 /* CatalogCell.swift */; };
 		9C57F9BD27329BEA00D7E319 /* CatalogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C57F9BB27329BEA00D7E319 /* CatalogCell.xib */; };
@@ -80,6 +86,12 @@
 /* Begin PBXFileReference section */
 		9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		9C3148AF2722D09500C07375 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		9C503A5927392C4F00775FB0 /* BasketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewController.swift; sourceTree = "<group>"; };
+		9C503A5B2739313D00775FB0 /* BasketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
+		9C503A5C2739313D00775FB0 /* BasketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketCell.xib; sourceTree = "<group>"; };
+		9C503A5F273932FE00775FB0 /* GetBasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBasketRequestFactory.swift; sourceTree = "<group>"; };
+		9C503A612739331100775FB0 /* GetBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBasket.swift; sourceTree = "<group>"; };
+		9C503A632739336E00775FB0 /* GetBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBasketResult.swift; sourceTree = "<group>"; };
 		9C57F9B827329B7900D7E319 /* CatalogCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewController.swift; sourceTree = "<group>"; };
 		9C57F9BA27329BEA00D7E319 /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
 		9C57F9BB27329BEA00D7E319 /* CatalogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogCell.xib; sourceTree = "<group>"; };
@@ -199,6 +211,8 @@
 				9C91A67A271EF047004109ED /* UserCell.xib */,
 				9C57F9BA27329BEA00D7E319 /* CatalogCell.swift */,
 				9C57F9BB27329BEA00D7E319 /* CatalogCell.xib */,
+				9C503A5B2739313D00775FB0 /* BasketCell.swift */,
+				9C503A5C2739313D00775FB0 /* BasketCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -215,6 +229,7 @@
 				9CF4FDB5270DC27600F39FFA /* RemoveReviewResult.swift */,
 				9CB12A70271308860058065B /* AddToBasketResult.swift */,
 				9CB12A72271308A00058065B /* DeleteFromBasketResult.swift */,
+				9C503A632739336E00775FB0 /* GetBasketResult.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -276,6 +291,8 @@
 				9CB12A77271309B10058065B /* AddToBasket.swift */,
 				9CB12A7927130AF50058065B /* DeleteFromBasketRequestFactory.swift */,
 				9CB12A7B27130B090058065B /* DeleteFromBasket.swift */,
+				9C503A5F273932FE00775FB0 /* GetBasketRequestFactory.swift */,
+				9C503A612739331100775FB0 /* GetBasket.swift */,
 			);
 			path = Basket;
 			sourceTree = "<group>";
@@ -354,6 +371,7 @@
 				9C91A675271EE7E1004109ED /* UserViewController.swift */,
 				9C57F9B827329B7900D7E319 /* CatalogCollectionViewController.swift */,
 				9C6345002732CB1500EFFB49 /* ProductViewController.swift */,
+				9C503A5927392C4F00775FB0 /* BasketTableViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -507,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C57F9BD27329BEA00D7E319 /* CatalogCell.xib in Resources */,
+				9C503A5E2739313D00775FB0 /* BasketCell.xib in Resources */,
 				9C91A67C271EF047004109ED /* UserCell.xib in Resources */,
 				9C91A674271EE461004109ED /* Main.storyboard in Resources */,
 				9C9A198727020FF700D5F080 /* LaunchScreen.storyboard in Resources */,
@@ -552,16 +571,21 @@
 				9CB12A73271308A00058065B /* DeleteFromBasketResult.swift in Sources */,
 				9C59BBEE270380B500D85EC4 /* RequestFactory.swift in Sources */,
 				9CEDA5DB2705A79C00C802D2 /* GetListOfProducts.swift in Sources */,
+				9C503A5A27392C4F00775FB0 /* BasketTableViewController.swift in Sources */,
 				9C9A197F27020FF500D5F080 /* AuthViewController.swift in Sources */,
+				9C503A642739336E00775FB0 /* GetBasketResult.swift in Sources */,
+				9C503A60273932FE00775FB0 /* GetBasketRequestFactory.swift in Sources */,
 				9CF4FDB6270DC27600F39FFA /* RemoveReviewResult.swift in Sources */,
 				9C9A197B27020FF500D5F080 /* AppDelegate.swift in Sources */,
 				9CF4FDA6270DB92D00F39FFA /* ApproveReviewResult.swift in Sources */,
+				9C503A5D2739313D00775FB0 /* BasketCell.swift in Sources */,
 				9CEDA5D42705A4CB00C802D2 /* ProductsResult.swift in Sources */,
 				9CB12A7A27130AF50058065B /* DeleteFromBasketRequestFactory.swift in Sources */,
 				9CF4FDAC270DBAFB00F39FFA /* AddReview.swift in Sources */,
 				9CF4FDB4270DBFEA00F39FFA /* RemoveReview.swift in Sources */,
 				9CEDA5D92705A67200C802D2 /* ProductsListRequestFactory.swift in Sources */,
 				9CEDA5E22705B38C00C802D2 /* CardProductRequestFactory.swift in Sources */,
+				9C503A622739331100775FB0 /* GetBasket.swift in Sources */,
 				9C6345012732CB1600EFFB49 /* ProductViewController.swift in Sources */,
 				9C59BBDC27037B1700D85EC4 /* DataRequest.swift in Sources */,
 				9CF4FDAA270DBAC700F39FFA /* AddReviewRequestFactory.swift in Sources */,

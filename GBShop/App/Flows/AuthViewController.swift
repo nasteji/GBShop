@@ -20,13 +20,19 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginTextField.isAccessibilityElement = true
+        loginTextField.accessibilityIdentifier = "login"
+        passwordTextField.isAccessibilityElement = true
+        passwordTextField.accessibilityIdentifier = "password"
     }
     
     func auth() {
         let auth = requestFactory.makeAuthRequestFatory()
         guard let login = loginTextField.text, let password = passwordTextField.text
         else { return }
-        auth.login(userName: login, password: password) { response in
+    //    auth.login(userName: login, password: password) { response in
+        auth.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
             case .success(let user):
                 UserStorage.shared.addUser(user: User(id: user.user.id, login: user.user.login, password: password, name: user.user.name, lastname: user.user.lastname))

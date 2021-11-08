@@ -16,6 +16,21 @@ class CatalogCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    let requestFactory = RequestFactory()
+    var idProduct = 0
+    
+    @IBAction func addToBasketButton(_ sender: UIButton) {
+        let requestAddToBasket = requestFactory.makeAddToBasketRequestFactory()
+        requestAddToBasket.addtoBasket(idProduct: idProduct, quantity: 1) { response in
+            switch response.result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -25,5 +40,7 @@ class CatalogCell: UICollectionViewCell {
         nameLabel.text = product.name
         priceLabel.text = String("Цена: \(product.price)")
         imageProductView.image = UIImage(named: "noFoto")
+        
+        idProduct = product.id
     }
 }

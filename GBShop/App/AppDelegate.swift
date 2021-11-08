@@ -16,39 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // MARK: - Authorization
-//        let auth = requestFactory.makeAuthRequestFatory()
-//        auth.login(userName: "Somebody", password: "mypassword") { response in
-//            switch response.result {
-//            case .success(let login):
-//                print(login)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
-//
-        // MARK: - Getting a list of products
-//        let getProductList = requestFactory.makeProductsListRequestFactory()
-//        getProductList.productsList(pageNumber: 1, idCategory: 1) { response in
-//            switch response.result {
-//            case .success(let productList):
-//                print(productList)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
-        
-        // MARK: - Getting a card product
-        let getCardProduct = requestFactory.makeCardProductRequestFactory()
-        getCardProduct.cardProduct(idProduct: 123) { response in
-            switch response.result {
-            case .success(let product):
-                print(product)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
+ 
         // MARK: - Adding a review
         let requestAddReview = requestFactory.makeAddReviewRequestFactory()
         requestAddReview.addReview(idUser: 123, text: "Текст отзыва") { response in
@@ -81,28 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
-        
-        // MARK: - Adding an item to the basket
-        let requestAddToBasket = requestFactory.makeAddToBasketRequestFactory()
-        requestAddToBasket.addtoBasket(idProduct: 123, quantity: 1) { response in
-            switch response.result {
-            case .success(let result):
-                print(result)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
-        // MARK: - Removing an item from the basket
-        let requestDeleteFromBasket = requestFactory.makeDeleteFromBasketRequestFactory()
-        requestDeleteFromBasket.deleteFromBasket(idProduct: 123) { response in
-            switch response.result {
-            case .success(let result):
-                print(result)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+
         
         return true
     }
