@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  UserResult.swift
 //  GBShop
 //
 //  Created by Анастасия Живаева on 28.09.2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Codable {
+struct UserResult: Codable {
     let id: Int
     let login: String
     let name: String
