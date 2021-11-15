@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,40 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
- 
-        // MARK: - Adding a review
-        let requestAddReview = requestFactory.makeAddReviewRequestFactory()
-        requestAddReview.addReview(idUser: 123, text: "Текст отзыва") { response in
-            switch response.result {
-            case .success(let review):
-                print(review)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
-        // MARK: - Review approval
-        let requestApproveReview = requestFactory.makeApproveReviewRequestFactory()
-        requestApproveReview.approveReview(idComment: 123) { response in
-            switch response.result {
-            case .success(let result):
-                print(result)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
-        // MARK: - Removing a review
-        let requestRemoveReview = requestFactory.makeRemoveReviewRequestFactory()
-        requestRemoveReview.removeReview(idComment: 123) { response in
-            switch response.result {
-            case .success(let result):
-                print(result)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-
+        FirebaseApp.configure()
         
         return true
     }

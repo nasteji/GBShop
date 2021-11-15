@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BasketTableViewController: UITableViewController {
     
@@ -14,6 +15,7 @@ class BasketTableViewController: UITableViewController {
         products.removeAll()
         self.tableView.reloadData()
         payButton.setTitle("Корзина пуста", for: .normal)
+        Analytics.logEvent("pay", parameters: ["success": true])
     }
     
     let requestFactory = RequestFactory()
@@ -49,11 +51,13 @@ class BasketTableViewController: UITableViewController {
                 for i in 0..<self.products.count {
                     self.resultSumma += self.products[i].price
                 }
+                Analytics.logEvent("getBasketList", parameters: ["success": true])
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                     self.payButton.setTitle(String("Оплатить \(self.resultSumma)"), for: .normal)
                 }
             case .failure(let error):
+                Analytics.logEvent("getBasketList", parameters: ["success": false])
                 print(error.localizedDescription)
             }
         }

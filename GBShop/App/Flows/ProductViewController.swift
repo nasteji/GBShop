@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProductViewController: UIViewController {
 
@@ -30,10 +31,12 @@ class ProductViewController: UIViewController {
             switch response.result {
             case .success(let product):
                 self.cardProduct = product
+                Analytics.logEvent("getCardProduct", parameters: ["success": true])
                 DispatchQueue.main.async {
                     self.configure()
                 }
             case .failure(let error):
+                Analytics.logEvent("getCardProduct", parameters: ["success": false])
                 print(error.localizedDescription)
             }
         }
