@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CatalogCollectionViewController: UICollectionViewController {
     
@@ -36,10 +37,12 @@ class CatalogCollectionViewController: UICollectionViewController {
             switch response.result {
             case .success(let productList):
                 self.products = productList
+                Analytics.logEvent("getProductList", parameters: ["success": true])
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
             case .failure(let error):
+                Analytics.logEvent("getProductList", parameters: ["success": false])
                 print(error.localizedDescription)
             }
         }

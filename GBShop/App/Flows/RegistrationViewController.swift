@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationViewController: UIViewController {
     
@@ -24,9 +25,12 @@ class RegistrationViewController: UIViewController {
             let newUser = User(id: 1, login: loginTextField.text!, password: passwordTextField.text!, name: nameTextField.text!, lastname: lastNameTextField.text!)
             UserStorage.shared.addUser(user: newUser)
             
+            Analytics.logEvent("registration", parameters: ["success": true])
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let tabBarViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarViewController")
             navigationController?.pushViewController(tabBarViewController, animated: true)
+        } else {
+            Analytics.logEvent("registration", parameters: ["success": false])
         }
     }
     
