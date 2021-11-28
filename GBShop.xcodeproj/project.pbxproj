@@ -32,6 +32,7 @@
 		9C59BBEC27037FC800D85EC4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBEB27037FC800D85EC4 /* Auth.swift */; };
 		9C59BBEE270380B500D85EC4 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59BBED270380B500D85EC4 /* RequestFactory.swift */; };
 		9C6345012732CB1600EFFB49 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6345002732CB1500EFFB49 /* ProductViewController.swift */; };
+		9C6EF719274E2FC300C59366 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6EF718274E2FC300C59366 /* SnapshotHelper.swift */; };
 		9C77EF27273E822600BE9096 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C77EF26273E822600BE9096 /* GoogleService-Info.plist */; };
 		9C91A672271EE09B004109ED /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91A671271EE09B004109ED /* RegistrationViewController.swift */; };
 		9C91A674271EE461004109ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C91A673271EE461004109ED /* Main.storyboard */; };
@@ -118,6 +119,7 @@
 		9C59BBEB27037FC800D85EC4 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		9C59BBED270380B500D85EC4 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		9C6345002732CB1500EFFB49 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		9C6EF718274E2FC300C59366 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		9C77EF26273E822600BE9096 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C91A671271EE09B004109ED /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		9C91A673271EE461004109ED /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 		9C9A199A27020FF800D5F080 /* GBShopUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9C6EF718274E2FC300C59366 /* SnapshotHelper.swift */,
 				9C9A199B27020FF800D5F080 /* GBShopUITests.swift */,
 				9C9A199D27020FF800D5F080 /* GBShopUITestsLaunchTests.swift */,
 			);
@@ -782,6 +785,7 @@
 			files = (
 				9C9A199C27020FF800D5F080 /* GBShopUITests.swift in Sources */,
 				9C9A199E27020FF800D5F080 /* GBShopUITestsLaunchTests.swift in Sources */,
+				9C6EF719274E2FC300C59366 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,7 +941,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GBShop/Environments/Info.plist;
@@ -956,6 +960,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -967,7 +972,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GBShop/Environments/Info.plist;
@@ -986,6 +991,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -996,7 +1002,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1022,7 +1028,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1047,7 +1053,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1071,7 +1077,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
