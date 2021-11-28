@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		629704CDDD0B7B0D76AF878A /* Pods_GBShop_GBShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0ECC748D7A705AB61EBA7F /* Pods_GBShop_GBShopUITests.framework */; };
 		8A156FFC34B3AED7C09367A0 /* Pods_GBShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69E98D4938008663D2C65C3 /* Pods_GBShopTests.framework */; };
 		9C1FF8F92704C8ED0007FCF6 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */; };
@@ -39,6 +40,8 @@
 		9C91A676271EE7E1004109ED /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91A675271EE7E1004109ED /* UserViewController.swift */; };
 		9C91A67B271EF047004109ED /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91A679271EF047004109ED /* UserCell.swift */; };
 		9C91A67C271EF047004109ED /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C91A67A271EF047004109ED /* UserCell.xib */; };
+=======
+>>>>>>> master
 		9C9A197B27020FF500D5F080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A197A27020FF500D5F080 /* AppDelegate.swift */; };
 		9C9A197D27020FF500D5F080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A197C27020FF500D5F080 /* SceneDelegate.swift */; };
 		9C9A197F27020FF500D5F080 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A197E27020FF500D5F080 /* AuthViewController.swift */; };
@@ -47,6 +50,7 @@
 		9C9A199227020FF800D5F080 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A199127020FF800D5F080 /* GBShopTests.swift */; };
 		9C9A199C27020FF800D5F080 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A199B27020FF800D5F080 /* GBShopUITests.swift */; };
 		9C9A199E27020FF800D5F080 /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A199D27020FF800D5F080 /* GBShopUITestsLaunchTests.swift */; };
+<<<<<<< HEAD
 		9CB12A71271308860058065B /* AddToBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A70271308860058065B /* AddToBasketResult.swift */; };
 		9CB12A73271308A00058065B /* DeleteFromBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A72271308A00058065B /* DeleteFromBasketResult.swift */; };
 		9CB12A762713094C0058065B /* AddToBasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12A752713094C0058065B /* AddToBasketRequestFactory.swift */; };
@@ -70,6 +74,8 @@
 		9CF4FDB4270DBFEA00F39FFA /* RemoveReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDB3270DBFEA00F39FFA /* RemoveReview.swift */; };
 		9CF4FDB6270DC27600F39FFA /* RemoveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4FDB5270DC27600F39FFA /* RemoveReviewResult.swift */; };
 		AE6015AF750FE0E40E2A19F7 /* Pods_GBShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF91A3C3799667D0CCFC431 /* Pods_GBShop.framework */; };
+=======
+>>>>>>> master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		01FFBB6CFA934F4F4312734F /* Pods-GBShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopTests.release.xcconfig"; path = "Target Support Files/Pods-GBShopTests/Pods-GBShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		04D85589193483CD009FF11B /* Pods-GBShop-GBShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop-GBShopUITests.debug.xcconfig"; path = "Target Support Files/Pods-GBShop-GBShopUITests/Pods-GBShop-GBShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		148AB70E992DA25FB71FF2E8 /* Pods-GBShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.debug.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +133,8 @@
 		9C91A675271EE7E1004109ED /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		9C91A679271EF047004109ED /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9C91A67A271EF047004109ED /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+=======
+>>>>>>> master
 		9C9A197727020FF500D5F080 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9A197A27020FF500D5F080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C9A197C27020FF500D5F080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +147,7 @@
 		9C9A199727020FF800D5F080 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9A199B27020FF800D5F080 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		9C9A199D27020FF800D5F080 /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9CB12A70271308860058065B /* AddToBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketResult.swift; sourceTree = "<group>"; };
 		9CB12A72271308A00058065B /* DeleteFromBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromBasketResult.swift; sourceTree = "<group>"; };
 		9CB12A752713094C0058065B /* AddToBasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketRequestFactory.swift; sourceTree = "<group>"; };
@@ -162,6 +172,8 @@
 		E69E98D4938008663D2C65C3 /* Pods_GBShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF91A3C3799667D0CCFC431 /* Pods_GBShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9168B8DB766F3AC114804E0 /* Pods-GBShop-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop-GBShopUITests.release.xcconfig"; path = "Target Support Files/Pods-GBShop-GBShopUITests/Pods-GBShop-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
+=======
+>>>>>>> master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +181,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				9CEDA5D22705987D00C802D2 /* Alamofire in Frameworks */,
 				AE6015AF750FE0E40E2A19F7 /* Pods_GBShop.framework in Frameworks */,
+=======
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +208,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		2D8CA05202C639AA8519675B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +302,8 @@
 			path = Result;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> master
 		9C9A196E27020FF500D5F080 = {
 			isa = PBXGroup;
 			children = (
@@ -311,12 +329,20 @@
 		9C9A197927020FF500D5F080 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
-				9CF3DD1D2702171B009D9A76 /* App */,
+				9C9A197A27020FF500D5F080 /* AppDelegate.swift */,
 				9C9A197C27020FF500D5F080 /* SceneDelegate.swift */,
+<<<<<<< HEAD
 				9CF3DD22270217BE009D9A76 /* Core */,
 				9CF3DD23270217C6009D9A76 /* Resources */,
 				9CF3DD24270217DB009D9A76 /* Environments */,
 				9C31B4A4273E936300B6F6E7 /* Analytics */,
+=======
+				9C9A197E27020FF500D5F080 /* ViewController.swift */,
+				9C9A198027020FF500D5F080 /* Main.storyboard */,
+				9C9A198327020FF700D5F080 /* Assets.xcassets */,
+				9C9A198527020FF700D5F080 /* LaunchScreen.storyboard */,
+				9C9A198827020FF700D5F080 /* Info.plist */,
+>>>>>>> master
 			);
 			path = GBShop;
 			sourceTree = "<group>";
@@ -325,7 +351,6 @@
 			isa = PBXGroup;
 			children = (
 				9C9A199127020FF800D5F080 /* GBShopTests.swift */,
-				9C1FF8F82704C8ED0007FCF6 /* ResponseCodableTests.swift */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -340,6 +365,7 @@
 			path = GBShopUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		9CB12A74271309090058065B /* Basket */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +497,8 @@
 			path = Review;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> master
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -489,9 +517,6 @@
 			dependencies = (
 			);
 			name = GBShop;
-			packageProductDependencies = (
-				9CEDA5D12705987D00C802D2 /* Alamofire */,
-			);
 			productName = GBShop;
 			productReference = 9C9A197727020FF500D5F080 /* GBShop.app */;
 			productType = "com.apple.product-type.application";
@@ -567,9 +592,6 @@
 				Base,
 			);
 			mainGroup = 9C9A196E27020FF500D5F080;
-			packageReferences = (
-				9CEDA5D02705987D00C802D2 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			productRefGroup = 9C9A197827020FF500D5F080 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -720,6 +742,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				9CEDA5DF2705B32A00C802D2 /* CardProductResult.swift in Sources */,
 				9C91A676271EE7E1004109ED /* UserViewController.swift in Sources */,
 				9C59BBEA27037F8100D85EC4 /* AuthRequestFactory.swift in Sources */,
@@ -767,6 +790,11 @@
 				9C59BBD82703794500D85EC4 /* AbstractErrorParser.swift in Sources */,
 				9CF4FDB0270DBE2300F39FFA /* ApproveReview.swift in Sources */,
 				9C59BBEC27037FC800D85EC4 /* Auth.swift in Sources */,
+=======
+				9C9A197F27020FF500D5F080 /* ViewController.swift in Sources */,
+				9C9A197B27020FF500D5F080 /* AppDelegate.swift in Sources */,
+				9C9A197D27020FF500D5F080 /* SceneDelegate.swift in Sources */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +803,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C9A199227020FF800D5F080 /* GBShopTests.swift in Sources */,
-				9C1FF8F92704C8ED0007FCF6 /* ResponseCodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,7 +971,7 @@
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GBShop/Environments/Info.plist;
+				INFOPLIST_FILE = GBShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -975,7 +1002,7 @@
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZRWH9SZJA2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GBShop/Environments/Info.plist;
+				INFOPLIST_FILE = GBShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1135,25 +1162,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		9CEDA5D02705987D00C802D2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		9CEDA5D12705987D00C802D2 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9CEDA5D02705987D00C802D2 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C9A196F27020FF500D5F080 /* Project object */;
 }
