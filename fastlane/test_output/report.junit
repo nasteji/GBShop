@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='GBShopTests.xctest' tests='16' failures='1'>
+  <testsuite name='GBShopUITests.GBShopUITests' tests='2' failures='1'>
+    <testcase classname='GBShopUITests.GBShopUITests' name='testExample'>
+      <failure message='Failed to get matching snapshot: Application gb.GBShop is not running'>GBShopUITests/GBShopUITests.swift:30</failure>
+    </testcase>
+    <testcase classname='GBShopUITests.GBShopUITests' name='testLaunchPerformance' time='86.594'/>
+  </testsuite>
+  <testsuite name='GBShopUITests.GBShopUITestsLaunchTests' tests='4' failures='0'>
+    <testcase classname='GBShopUITests.GBShopUITestsLaunchTests' name='testLaunch' time='6.800'/>
+    <testcase classname='GBShopUITests.GBShopUITestsLaunchTests' name='testLaunch' time='6.799'/>
+    <testcase classname='GBShopUITests.GBShopUITestsLaunchTests' name='testLaunch' time='5.062'/>
+    <testcase classname='GBShopUITests.GBShopUITestsLaunchTests' name='testLaunch' time='6.809'/>
+  </testsuite>
+  <testsuite name='GBShopTests.GBShopTests' tests='2' failures='0'>
+    <testcase classname='GBShopTests.GBShopTests' name='testExample' time='0.001'/>
+    <testcase classname='GBShopTests.GBShopTests' name='testPerformanceExample' time='0.263'/>
+  </testsuite>
+  <testsuite name='GBShopTests.ResponseCodableTests' tests='8' failures='0'>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testAddReview' time='0.432'/>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testAddToBasket' time='0.233'/>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testApproveReview' time='0.264'/>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testDeleteFromBasket' time='0.244'/>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testGettingCardProduct' time='0.249'/>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testGettingListOfProducts' time='0.227'/>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testRemoveReview' time='0.252'/>
+    <testcase classname='GBShopTests.ResponseCodableTests' name='testShouldDownloadAndParse' time='0.193'/>
+  </testsuite>
+</testsuites>
